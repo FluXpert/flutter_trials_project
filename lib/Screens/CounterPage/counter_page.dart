@@ -7,40 +7,35 @@ class CounterPageGetX extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final counterController = CounterController();
+
     return Scaffold(
-      floatingActionButton: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              FloatingActionButton(
-                onPressed: counterController.decrementCounter,
-                child: Center(
-                  child: Icon(
-                    Icons.remove,
-                    size: 20.sp,
-                  ),
-                ),
-              ),
-              SizedBox(
-                width: 20.r,
-              ),
-              FloatingActionButton(
-                onPressed: counterController.incrementCounter,
-                child: Center(
-                  child: Icon(
-                    Icons.add,
-                    size: 20.sp,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
+      // floatingActionButton: Column(
+      //   mainAxisAlignment: MainAxisAlignment.end,
+      //   crossAxisAlignment: CrossAxisAlignment.end,
+      //   children: [
+      //     FloatingActionButton(
+      //       onPressed: counterController.decrementCounter,
+      //       child: Center(
+      //         child: Icon(
+      //           Icons.remove,
+      //           size: 20.sp,
+      //         ),
+      //       ),
+      //     ),
+      //     SizedBox(
+      //       height: 20.r,
+      //     ),
+      //     FloatingActionButton(
+      //       onPressed: counterController.incrementCounter,
+      //       child: Center(
+      //         child: Icon(
+      //           Icons.add,
+      //           size: 20.sp,
+      //         ),
+      //       ),
+      //     ),
+      //   ],
+      // ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -73,6 +68,40 @@ class CounterPageGetX extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(
+            height: 30.h,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              InkWell(
+                onTap: counterController.decrementCounter,
+                child: CircleAvatar(
+                  radius: 30.r,
+                  child: const Center(
+                    child: Icon(
+                      Icons.remove,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 20.w,
+              ),
+              InkWell(
+                onTap: counterController.incrementCounter,
+                child: CircleAvatar(
+                  radius: 30.r,
+                  child: const Center(
+                    child: Icon(
+                      Icons.add,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );
