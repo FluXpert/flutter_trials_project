@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "961973999462",
+    "project_id": "trials-project-fluxpert",
+    "storage_bucket": "trials-project-fluxpert.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961973999462:android:edb98f0bedb5ec3f821aa7",
+        "android_client_info": {
+          "package_name": "com.fluxpert.trials_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961973999462-sp46nbc8j5tk5ralt8h51uo5fu2ks35o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOJHdOkr_iXNHicp29VNjb4OrxQ9xLJYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961973999462-sp46nbc8j5tk5ralt8h51uo5fu2ks35o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
